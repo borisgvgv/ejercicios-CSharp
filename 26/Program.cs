@@ -20,8 +20,5 @@ class Ejercicio_26
 
         Console.WriteLine("Contraseña Correcta");
 
-
-
-
     }
 }
