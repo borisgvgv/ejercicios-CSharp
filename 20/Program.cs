@@ -1,6 +1,7 @@
 ﻿using System;
 
-class Elercicio_19{
+class Elercicio_20
+{
     static void Main(){
         Console.WriteLine("Introduce el número de un mes");
         int numMes = Convert.ToInt32(Console.ReadLine());
