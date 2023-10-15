@@ -1,0 +1,15 @@
+/workspaces/ejercicios-CSharp/40-2-ent2/bin/Debug/net7.0/40-2-ent2
+/workspaces/ejercicios-CSharp/40-2-ent2/bin/Debug/net7.0/40-2-ent2.deps.json
+/workspaces/ejercicios-CSharp/40-2-ent2/bin/Debug/net7.0/40-2-ent2.runtimeconfig.json
+/workspaces/ejercicios-CSharp/40-2-ent2/bin/Debug/net7.0/40-2-ent2.dll
+/workspaces/ejercicios-CSharp/40-2-ent2/bin/Debug/net7.0/40-2-ent2.pdb
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.csproj.AssemblyReference.cache
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.AssemblyInfoInputs.cache
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.AssemblyInfo.cs
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.csproj.CoreCompileInputs.cache
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.dll
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/refint/40-2-ent2.dll
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.pdb
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/40-2-ent2.genruntimeconfig.cache
+/workspaces/ejercicios-CSharp/40-2-ent2/obj/Debug/net7.0/ref/40-2-ent2.dll
