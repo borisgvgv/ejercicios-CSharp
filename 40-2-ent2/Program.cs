@@ -39,7 +39,6 @@ class EN_tema2
 
         while (numero != 0)
         {
-
             contador = 0;
             busquedas++;
             Console.Write($"Los divisores de {numero} son: ");
