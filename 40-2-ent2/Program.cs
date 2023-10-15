@@ -33,12 +33,15 @@ class EN_tema2
     {
 
         int contador = 0;
+        int busquedas = 0;
         Console.WriteLine("Introduce un número");
         int numero = Convert.ToInt32(Console.ReadLine());
 
         while (numero != 0)
         {
 
+            contador = 0;
+            busquedas++;
             Console.Write($"Los divisores de {numero} son: ");
 
             for (int i = 1; i <= numero; i++)
@@ -52,14 +55,13 @@ class EN_tema2
                         contador++;
                     }
                 }
-
             }
 
             Console.WriteLine();
+
             if (contador == 2)
             {
                 Console.WriteLine($"El número {numero} es primo");
-
             }
             else
             {
@@ -68,6 +70,12 @@ class EN_tema2
 
             Console.WriteLine("Introduce un número");
             numero = Convert.ToInt32(Console.ReadLine());
+
+            if (numero == 0)
+            {
+                Console.WriteLine($"El programa ha realizado {busquedas} búsquedas de divisores. ");
+                Console.WriteLine("Hasta pronto.");
+            }
         }
     }
 }
