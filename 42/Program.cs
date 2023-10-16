@@ -20,21 +20,40 @@ class E42
         int numero = Convert.ToInt32(Console.ReadLine());
         int numeroIn = numero;
 
+        // for (int i = 1; i <= numero; i++)
+        // {
+
+        //     for (int j = 1; j <= numeroIn - 1; j++)
+        //     {
+        //         System.Console.Write(" ");
+        //     }
+        //     for (int ii = numeroIn; ii < numero + 1; ii++)
+        //     {
+        //         System.Console.Write("#");
+        //     }
+
+        //     numeroIn--;
+        //     System.Console.WriteLine();
+        // }
+
+
         for (int i = 1; i <= numero; i++)
         {
 
-            for (int j = 1; j <= numeroIn - 1; j++)
+            for (int j = numeroIn - 1; j > 0; j--)
             {
-                System.Console.Write(" ");
+
+                System.Console.Write("*");
+
             }
-            for (int ii = numeroIn; ii < numero + 1; ii++)
+            for (int ii = 1; ii < numero + 1; ii++)
             {
                 System.Console.Write("#");
             }
-
             numeroIn--;
             System.Console.WriteLine();
         }
+
 
     }
 }
