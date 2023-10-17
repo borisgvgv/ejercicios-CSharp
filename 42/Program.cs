@@ -25,11 +25,12 @@ class E42
 
             for (int j = 0; j < numeroIn; j++)
             {
-                System.Console.Write("*");
+                System.Console.Write(" ");
             }
             for (int h = numeroIn; h < numero; h++)
             {
                 System.Console.Write("#");
+
             }
 
             numeroIn--;

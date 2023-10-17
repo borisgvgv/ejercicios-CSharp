@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/ejercicios-CSharp/43/43.csproj": {}
+    "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/43/43.csproj": {}
   },
   "projects": {
-    "/workspaces/ejercicios-CSharp/43/43.csproj": {
+    "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/43/43.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ejercicios-CSharp/43/43.csproj",
+        "projectUniqueName": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/43/43.csproj",
         "projectName": "43",
-        "projectPath": "/workspaces/ejercicios-CSharp/43/43.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/ejercicios-CSharp/43/obj/",
+        "projectPath": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/43/43.csproj",
+        "packagesPath": "/Users/borisgarces/.nuget/packages/",
+        "outputPath": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/43/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/Users/borisgarces/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
