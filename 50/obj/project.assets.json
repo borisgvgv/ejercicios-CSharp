@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/49/49.csproj",
-      "projectName": "49",
-      "projectPath": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/49/49.csproj",
+      "projectUniqueName": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/50/50.csproj",
+      "projectName": "50",
+      "projectPath": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/50/50.csproj",
       "packagesPath": "/Users/borisgarces/.nuget/packages/",
-      "outputPath": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/49/obj/",
+      "outputPath": "/Users/borisgarces/proyectos/MODULO_DAW/Programacion/Ejercicios/ejercicios-CSharp/50/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/borisgarces/.nuget/NuGet/NuGet.Config"

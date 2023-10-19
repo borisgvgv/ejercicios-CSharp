@@ -18,31 +18,32 @@ class E49
         int numero = Convert.ToInt32(Console.ReadLine());
 
 
-        while ((numero != numOculto)|| (intentos < 6))
+        while ((numero != numOculto) && (intentos < 6))
         {
 
             if (numero < numOculto)
             {
                 Console.WriteLine("El número es muy bajo");
             }
-            else if (numero > numOculto)
+            else
             {
                 Console.WriteLine("El número es muy alto");
             }
-            else if (intentos == 6)
-            {
-                Console.WriteLine("Has superado el número de intentos posibles");
-            }
-            else
-            {
-                Console.WriteLine("El número número es correcto.");
-            }
+
+
             Console.WriteLine("Introduce un número");
             numero = Convert.ToInt32(Console.ReadLine());
             intentos++;
         }
 
-
+        if (intentos == 6)
+        {
+            Console.WriteLine("Has superado el número de intentos posibles");
+        }
+        else
+        {
+            Console.WriteLine("El número número es correcto.");
+        }
 
     }
 }
