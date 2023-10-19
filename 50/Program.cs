@@ -8,21 +8,30 @@ y de "6x", además del valor de "y". Deberás entregar una captura
 de pantalla (estática) del proceso de depuración.
 */ // Boris Garcés Vernier
 
-
-// Ejemplo_02_07a.cs
-// Modificación de una variable para depuración
-// Introducción a C#, por Nacho Cabanes
 using System;
-class Depuracion
+class E50
 {
     static void Main()
     {
-        int n = 5;
-        n = n * 17;
-        n = n - 1432;
-        for (int x = 0; x < 5; x++)
-            Console.Write("{0} ", x);
-        for (int i = 1; i < n; i++)
-            Console.Write("{0} ", i);
+        System.Console.WriteLine("Introduce un valor entero entre -10 y 10");
+        int x = Convert.ToInt32(Console.ReadLine());
+        x = 4;
+         
+        while ((x < -10) || (x > 10))
+        {
+            if ((x < -10) || (x > 10))
+            {
+                System.Console.WriteLine("valor fuera de rango");
+
+            }
+            System.Console.WriteLine("Introduce un valor entero entre -10 y 10");
+            x = Convert.ToInt32(Console.ReadLine());
+        }
+
+        int y = x * x - 6 * x + 9;
+        Console.WriteLine($"Para x = {x}, y = {y}");
+
+        Console.ReadLine();
+
     }
 }
