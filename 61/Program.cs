@@ -6,7 +6,6 @@ responda si se trata de un operador (+ - * / %), un símbolo de puntuación (. ,
  y después empleando "switch". Recuerda agrupar casos cuando sea posible.
 */
 
-
 using System;
 class E61
 {
