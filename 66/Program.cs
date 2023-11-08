@@ -20,16 +20,16 @@ class E66
     static void Main()
     {
 
-        Console.WriteLine(
-            "Escoje una de estas opciones\n" +
-            "1.Ver datos existentes\n" +
-            "2.Añadir un nuevo dato\n" +
-            "3.Buscar\n" +
-            "0.Salir"
-        );
-        byte opción = Convert.ToByte(Console.ReadLine());
+        System.Console.WriteLine("Escoje una de estas opciones");
+        System.Console.WriteLine("1. Ver datos existentes");
+        System.Console.WriteLine("2. Añadir un nuevo dato");
+        System.Console.WriteLine("3.Buscar");
+        System.Console.WriteLine("0.Salir");
 
-        switch (opción)
+
+        byte opcion = Convert.ToByte(Console.ReadLine());
+
+        switch (opcion)
         {
             case 0:
                 System.Console.WriteLine("Ha escogido la opción 0:  salir");
@@ -42,6 +42,9 @@ class E66
                 break;
             case 3:
                 System.Console.WriteLine("Ha escogido la opción 3: Buscar");
+                break;
+            default:
+                System.Console.WriteLine("Opción incorrecta");
                 break;
         }
 
