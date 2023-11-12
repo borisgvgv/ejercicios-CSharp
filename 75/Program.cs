@@ -15,7 +15,7 @@ class E75
 {
     static void Main()
     {
-        const int constante = 3;
+        const int constante = 10;
         float numero, mayor = 0, menor = 0;
 
         float[] arrayNumeros = new float[constante];
