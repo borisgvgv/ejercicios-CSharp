@@ -1,96 +1,60 @@
-﻿/*
-74. Crea un programa en C# que pida al usuario el número de un mes
-(por ejemplo, 3 para marzo) y el número de un día (por ejemplo, 10)
-y muestre de qué número de día dentro del año se trata, en un año no bisiesto.
-Por ejemplo: como enero tiene 31 días y febrero 28, el 10 de marzo sería el día
-número 69 del año (31+28+10). Debes usar un array para guardar la cantidad de
-días que tiene cada mes.
-*/ // Boris Garcés Vernier
-
-using System;
-class E74
+﻿using System;
+class Ejemplo_04_01_04a
 {
     static void Main()
     {
-
-        string[] meses = { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" };
-
-        System.Console.Write("Elige un mes: ");
-        int mes = Convert.ToInt32(Console.ReadLine());
-
-        System.Console.Write("Elige un día del mes elegido: ");
-        int dia = Convert.ToInt32(Console.ReadLine());
-
-        int[] diasPorMes = new int[mes];
-
-
-        //int contador = 0, sumaMeses = 0, dias = 0, sumadorMes = 0;
-        int dias = 0, sumaMeses = 0, diaDelAño = 0;
-        bool error = false;
-
-
-        for (int i = 0; i <= diasPorMes.Length - 1; i++)
+        int[] datos = { 10, 15, 12, 0, 0 };
+        int capacidad = 5; // Capacidad máxima del array
+        int cantidad = 3; // Número real de datos guardados
+        int i; // Para recorrer los elementos
+               // Mostramos el array
+        for (i = 0; i < cantidad; i++)
+            Console.Write("{0} ", datos[i]);
+        Console.WriteLine();
+        // Buscamos el dato "15"
+        for (i = 0; i < cantidad; i++)
+            if (datos[i] == 15)
+                Console.WriteLine("15 encontrado en la posición {0} ", i + 1);
+        // Buscamos el máximo
+        int maximo = datos[0];
+        for (i = 1; i < cantidad; i++)
+            if (datos[i] > maximo)
+                maximo = datos[i];
+        Console.WriteLine("El máximo es {0} ", maximo);
+        // Añadimos un dato al final
+        Console.WriteLine("Añadiendo 6 al final");
+        if (cantidad < capacidad)
         {
-
-            if (i == 0)
-            {
-
-                dias = 31;
-
-            }
-            else if (i == 1)
-            {
-
-                dias = 28;
-
-            }
-            else if ((i != 0) && (i != 1) && (i % 2 == 0) && (i <= 7))
-            {
-                dias = 31;
-            }
-            else if ((i != 0) && (i != 1) && (i % 2 != 0) && (i >= 7))
-            {
-                dias = 31;
-            }
-            else
-            {
-                dias = 30;
-            }
-
-            diasPorMes[i] = dias;
-            sumaMeses += diasPorMes[i];
-
-            if ((dia > 31) && (mes == 1) || (dia > 28) && (mes == 2) || 
-            (mes <= 7) && (mes % 2 != 0) && (dia > 31) ||
-            (mes <= 7) && (mes % 2 == 0) && (dia > 30) || 
-            (mes >= 7) && (mes % 2 != 0) && (dia > 30) ||
-            (mes >= 7) && (mes % 2 == 0) && (dia > 31)){
-                error = true;
-            }
-            else
-            {
-                diaDelAño = (sumaMeses - diasPorMes[i]) + dia;
-            }
-
+            datos[cantidad] = 6;
+            cantidad++;
         }
-
-
-
-
-        if (error)
+        // Y volvemos a mostrar el array
+        for (i = 0; i < cantidad; i++)
+            Console.Write("{0} ", datos[i]);
+        Console.WriteLine();
+        // Borramos el segundo dato
+        Console.WriteLine("Borrando el segundo dato");
+        int posicionBorrar = 1;
+        for (i = posicionBorrar; i < cantidad - 1; i++)
+            datos[i] = datos[i + 1];
+        cantidad--;
+        // Y volvemos a mostrar el array
+        for (i = 0; i < cantidad; i++)
+            Console.Write("{0} ", datos[i]);
+        Console.WriteLine();
+        // Insertamos 30 en la tercera posición
+        if (cantidad < capacidad)
         {
-            System.Console.WriteLine("Error");
+            Console.WriteLine("Insertando 30 en la posición 3");
+            int posicionInsertar = 2;
+            for (i = cantidad; i > posicionInsertar; i--)
+                datos[i] = datos[i - 1];
+            datos[posicionInsertar] = 30;
+            cantidad++;
         }
-        else
-        {
-            System.Console.WriteLine("{0} tiene {1} días. El día {2} de {3} es el día {4} del año.", meses[mes - 1], dias, dia, meses[mes - 1], diaDelAño);
-
-        }
-
-
-
-
+        // Y volvemos a mostrar el array
+        for (i = 0; i < cantidad; i++)
+            Console.Write("{0} ", datos[i]);
+        Console.WriteLine();
     }
 }
-
-

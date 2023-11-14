@@ -45,16 +45,14 @@ class E76
                     try
                     {
                         int contador = 0;
-                        Console.WriteLine("Introduce un número o \"-0\" cuando quieras salir al menú.");
-                        do
+                        Console.WriteLine("Introduce un número o toca cualquier letra cuando quieras salir al menú.");
+                        for (int i = 1; i < constante; i++)
                         {
                             Console.Write("Numero: ");
-
                             numero = Convert.ToSingle(Console.ReadLine());
                             arrayNumeros[contador] = numero;
                             contador++;
-
-                        } while (numero != 's');
+                        }
                     }
                     catch (FormatException)
                     {
@@ -84,15 +82,16 @@ class E76
                     Console.WriteLine(mayor);
                     break;
                 case 4:
-                    for (int i = 1; i <= arrayNumeros.Length - 1; i++)
+                    menor = arrayNumeros[0];
+                    for (int i = 0; i <= arrayNumeros.Length - 1; i++)
                     {
-                        menor = arrayNumeros[0];
-                        if (menor > arrayNumeros[i])
+                        if ((arrayNumeros[i] < menor) && (arrayNumeros[i] != 0))
                         {
                             menor = arrayNumeros[i];
                         }
                     }
                     Console.WriteLine(menor);
+
                     break;
                 case 5:
                     Console.Write("Introduce el valor a buscar: ");
